@@ -24,12 +24,12 @@ models:
               to: ref('stg_customers')
               field: customer_id
       - name: order_total
-        data_type: number
+        data_type: float64
         description: The total amount of the order in USD including tax.
       - name: tax_paid
-        data_type: number
+        data_type: float64
       - name: ordered_at
-        data_type: timestamp_ntz
+        data_type: timestamp
         description: The timestamp the order was placed at.
       - name: is_food_order
         data_type: boolean
@@ -38,5 +38,5 @@ models:
         data_type: boolean
         description: A boolean indicating if this order included any drink items.
       - name: order_cost
-        data_type: number
+        data_type: float64
         description: The sum of supply expenses to fulfill the order.
