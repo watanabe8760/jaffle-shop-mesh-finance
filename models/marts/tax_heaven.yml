@@ -1,0 +1,17 @@
+models:
+  - name: tax_heaven
+    description: You don't have to pay tax so much.
+    access: public
+    group: finance
+    config:
+      contract:
+        enforced: true
+    columns:
+      - name: location_id
+        data_type: text
+      - name: location_name
+        data_type: text
+      - name: tax_rate
+        data_type: float64
+      - name: opened_at
+        data_type: timestamp
