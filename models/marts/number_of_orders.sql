@@ -3,7 +3,7 @@ with daily_orders as (
         date(order_at) as order_date,
         count(*) as order_count
     from
-        {{ ref('order') }}
+        {{ ref('orders') }}
     group by
         1
 )

@@ -1,0 +1,12 @@
+version: 2
+models:
+- name: number_of_orders
+  description: This model calculates the daily number of orders by summarizing the
+    order events from the 'orders' table. It provides insights into the volume of
+    orders placed each day, which can be useful for tracking sales trends and operational
+    planning.
+  columns:
+  - name: order_date
+    description: The date on which the orders were placed.
+  - name: order_count
+    description: The total number of orders placed on a given date.
