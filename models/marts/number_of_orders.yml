@@ -8,5 +8,9 @@ models:
   columns:
   - name: order_date
     description: The date on which the orders were placed.
+    data_tests:
+      - not_null
   - name: order_count
     description: The total number of orders placed on a given date.
+    data_tests:
+      - not_null

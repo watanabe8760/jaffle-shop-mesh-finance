@@ -1,6 +1,6 @@
 with daily_orders as (
     select
-        date(order_at) as order_date,
+        date(ordered_at) as order_date,
         count(*) as order_count
     from
         {{ ref('orders') }}
